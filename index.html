@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Republic Cosmetics — Compras China</title>
+<style>
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:#0F1420; color:#E8ECF4; display:flex; align-items:center; justify-content:center;
+    height:100vh; margin:0; text-align:center;
+  }
+  .box{ max-width:360px; padding:24px; }
+  .spinner{
+    width:36px; height:36px; border:3px solid #2A3245; border-top-color:#4C8BF5;
+    border-radius:50%; margin:0 auto 18px; animation:girar 0.8s linear infinite;
+  }
+  @keyframes girar{ to{ transform:rotate(360deg); } }
+  p{ font-size:14px; color:#9AA5BD; margin:0; }
+  a{ color:#4C8BF5; }
+</style>
+</head>
+<body>
+  <div class="box">
+    <div class="spinner"></div>
+    <p id="msg">Redirigiendo al catálogo…</p>
+  </div>
+  <script>
+    // Lee la URL actual del túnel (la actualiza el launcher cada vez que se prende)
+    // y manda a la página real. El "?t=" evita que el navegador use una copia vieja en caché.
+    fetch('url.txt?t=' + Date.now())
+      .then(r => {
+        if (!r.ok) throw new Error('no se encontró url.txt');
+        return r.text();
+      })
+      .then(url => {
+        url = url.trim();
+        if (!url) throw new Error('url.txt está vacío');
+        window.location.replace(url);
+      })
+      .catch(err => {
+        document.getElementById('msg').innerHTML =
+          'No se pudo redirigir automáticamente.<br>' +
+          'Probablemente el equipo de la oficina está apagado o el túnel no está corriendo.<br>' +
+          '<br><small>' + err.message + '</small>';
+      });
+  </script>
+</body>
+</html>
