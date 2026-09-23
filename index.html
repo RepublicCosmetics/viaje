@@ -45,7 +45,12 @@
 <script>
 (async () => {
   const cont = document.getElementById('contenido');
-  const pedido = new URLSearchParams(location.search).get('app');
+  // Sin parametros -> abre directo el Viaje de China.
+  // ?menu -> muestra todos los sistemas.  ?app=fortuna -> abre ese sistema.
+  const APP_POR_DEFECTO = 'viaje';
+  const qs = new URLSearchParams(location.search);
+  const verMenu = qs.has('menu');
+  const pedido = verMenu ? null : (qs.get('app') || APP_POR_DEFECTO);
 
   let data;
   try {
@@ -75,7 +80,7 @@
   const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
   cont.innerHTML =
-    (pedido ? `<p class="estado">No existe el sistema “${esc(pedido)}”. Elige uno:</p>` : '') +
+    (pedido && !verMenu ? `<p class="estado">No existe el sistema “${esc(pedido)}”. Elige uno:</p>` : '') +
     '<ul>' + apps.map(a => `
       <li><a href="${esc(base + a.ruta)}" style="--c:${esc(a.color || '')}">
         <span class="ico" aria-hidden="true">${esc(a.icono || '•')}</span>
