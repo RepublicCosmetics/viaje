@@ -1,6 +1,6 @@
 {
-    "base":  "https://mary-innovations-founded-viii.trycloudflare.com",
-    "actualizado":  "2026-09-23 13:05",
+    "base":  "https://mediterranean-inherited-tired-distant.trycloudflare.com",
+    "actualizado":  "2026-09-23 13:11",
     "apps":  [
                  {
                      "id":  "viaje",
@@ -41,6 +41,14 @@
                      "ruta":  "/seguimiento_compras/",
                      "icono":  "📋",
                      "color":  "#45b8b0"
+                 },
+                 {
+                     "id":  "shield",
+                     "nombre":  "SHIELD Cinema",
+                     "desc":  "Streaming de videos",
+                     "ruta":  "/shield/",
+                     "icono":  "🎬",
+                     "color":  "#e0574f"
                  }
              ]
 }
