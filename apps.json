@@ -1,0 +1,46 @@
+{
+    "base":  "https://fundamental-zen-rush-pillow.trycloudflare.com",
+    "actualizado":  "2026-09-23 13:00",
+    "apps":  [
+                 {
+                     "id":  "viaje",
+                     "nombre":  "Viaje China",
+                     "desc":  "Compras del viaje a China",
+                     "ruta":  "/viaje/compras_china.html",
+                     "icono":  "✈",
+                     "color":  "#d4af37"
+                 },
+                 {
+                     "id":  "fortuna",
+                     "nombre":  "FORTUNA",
+                     "desc":  "Plan de ahorros y seguimiento",
+                     "ruta":  "/fortuna/",
+                     "icono":  "💰",
+                     "color":  "#4cbf7a"
+                 },
+                 {
+                     "id":  "apolo",
+                     "nombre":  "APOLO",
+                     "desc":  "Gestion de proyectos",
+                     "ruta":  "/apolo/",
+                     "icono":  "☀",
+                     "color":  "#f0a04b"
+                 },
+                 {
+                     "id":  "hermes",
+                     "nombre":  "HERMES / ARGOS",
+                     "desc":  "Sistema de compras",
+                     "ruta":  "/hermes/argos.php",
+                     "icono":  "🏛",
+                     "color":  "#6d95e8"
+                 },
+                 {
+                     "id":  "seguimiento",
+                     "nombre":  "Seguimiento Compras",
+                     "desc":  "CRM y seguimiento de compras",
+                     "ruta":  "/seguimiento_compras/",
+                     "icono":  "📋",
+                     "color":  "#45b8b0"
+                 }
+             ]
+}
