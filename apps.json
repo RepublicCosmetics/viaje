@@ -1,6 +1,6 @@
 {
-  "base": "https://cannon-opinions-words-rolling.trycloudflare.com",
-  "actualizado": "2026-10-16 16:48",
+  "base": "https://prior-intimate-picked-warehouse.trycloudflare.com",
+  "actualizado": "2026-10-16 17:04",
   "apps": [
     {
       "id": "viaje",
@@ -41,6 +41,14 @@
       "ruta": "/seguimiento_compras/",
       "icono": "📋",
       "color": "#45b8b0"
+    },
+    {
+      "id": "oc",
+      "nombre": "Seguimiento de OC",
+      "desc": "Órdenes de compra de Dolibarr en vivo",
+      "ruta": "/seguimiento_oc/",
+      "icono": "📦",
+      "color": "#b07cf0"
     }
   ]
 }
