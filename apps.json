@@ -1,6 +1,6 @@
 {
-  "base": "https://twins-fitness-enjoyed-afternoon.trycloudflare.com",
-  "actualizado": "2026-11-13 11:28",
+  "base": "https://mold-intl-properties-views.trycloudflare.com",
+  "actualizado": "2026-11-13 17:17",
   "apps": [
     {
       "id": "viaje",
@@ -28,10 +28,18 @@
     },
     {
       "id": "hermes",
-      "nombre": "HERMES / ARGOS",
-      "desc": "Sistema de compras",
-      "ruta": "/hermes/argos.php",
+      "nombre": "HERMES",
+      "desc": "Dashboard de compras por proveedor",
+      "ruta": "/hermes/",
       "icono": "🏛️",
+      "color": "#c47a2c"
+    },
+    {
+      "id": "argos",
+      "nombre": "ARGOS",
+      "desc": "Supply chain y análisis de compras",
+      "ruta": "/hermes/argos.php",
+      "icono": "👁️",
       "color": "#6d95e8"
     },
     {
