@@ -1,6 +1,6 @@
 {
-  "base": "https://bald-booth-without-joke.trycloudflare.com",
-  "actualizado": "2026-11-18 11:25",
+  "base": "https://consultancy-decreased-sleep-brands.trycloudflare.com",
+  "actualizado": "2026-11-18 11:53",
   "apps": [
     {
       "id": "viaje",
@@ -9,6 +9,14 @@
       "ruta": "/viaje/compras_china.html",
       "icono": "✈️",
       "color": "#d4af37"
+    },
+    {
+      "id": "contenedores",
+      "nombre": "Seguimiento de Contenedores",
+      "desc": "Contenedores de China: dónde va cada uno y cuándo llega",
+      "ruta": "/viaje/seguimiento_contenedores.html",
+      "icono": "🚢",
+      "color": "#3fa7d6"
     },
     {
       "id": "fortuna",
