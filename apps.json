@@ -1,6 +1,6 @@
 {
-  "base": "https://starts-gates-shortcuts-specials.trycloudflare.com",
-  "actualizado": "2026-11-19 17:54",
+  "base": "https://garbage-toolbar-actively-shield.trycloudflare.com",
+  "actualizado": "2026-11-20 12:13",
   "apps": [
     {
       "id": "viaje",
@@ -65,6 +65,14 @@
       "ruta": "/seguimiento_oc/",
       "icono": "📦",
       "color": "#b07cf0"
+    },
+    {
+      "id": "agora",
+      "nombre": "ÁGORA",
+      "desc": "Cotizaciones y portal de proveedores",
+      "ruta": "/agora/",
+      "icono": "🤝",
+      "color": "#e08a5f"
     }
   ]
 }
